@@ -9,10 +9,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: List Files for Debugging
-        run: ls -R /action/lib/functions
-
+        
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
